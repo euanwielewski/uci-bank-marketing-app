@@ -1,0 +1,6 @@
+scikit-learn==1.0.2
+sklearn-pandas==1.8.0
+numpy==1.21.6
+imbalanced-learn==0.8.1
+Flask
+requests
