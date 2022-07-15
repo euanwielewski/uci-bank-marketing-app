@@ -14,9 +14,9 @@ Run docker container:
 
 NOTE: The model, categorical feature encoder and numerical feature scaler are pulled from an S3 bucket, so it might take some time for the app to spin up when running locally.
 
-## Post to app API
+## Post to API
 
-The app accepts JSON in the format:
+The app API accepts JSON in the format:
 
 ```
 data = [{"age": 17,
@@ -41,7 +41,7 @@ The app will return the prediction in the format:
 
 `result = {"probability": 0.34}`
 
-You can test posting to the app by running the `post.py` script from a separate shell:
+You can test posting to the app locally by running the `post.py` script from a separate shell:
 
 `python3 post.py`
 
@@ -58,4 +58,5 @@ NOTE: The current app would need to be rewritten slightly to allow it to work wi
 ## TODO
 
 - [ ] Add tests
+- [ ] Add error codes to API
 - [ ] Make async i.e. move to FastAPI (starlette + uvicorn)
