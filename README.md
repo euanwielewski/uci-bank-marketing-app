@@ -49,6 +49,12 @@ You can test posting to the app by running the `post.py` script from a separate 
 
 Details of the data cleaning, feature engineering and model training can be found in the `train_model.ipynb` notebook.
 
+## Proposed Serverless Architecture
+
+NOTE: The current app would need to be rewritten slightly to allow it to work with AWS Lambda.
+
+![serverless architecture](proposed-architecture.png)
+
 ## TODO
 
 - [ ] Add tests
